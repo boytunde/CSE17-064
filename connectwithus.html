@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connect With Us</title>
+	<meta charset="UTF-8">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel= "stylesheet" type= "text/css" href= "mystyle.css">
+	
+	<style type="text/css">
+	
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav{
+			margin-bottom: 30px;
+		}
+
+		body{
+			font-family: sans-serif;
+			background-color: rgb(238, 236, 215);
+		}
+		
+	</style>
+	
+</head>
+
+
+
+<body>
+
+
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<label class="logo">Bankok City</label>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="lifestyle.html">Lifestyle</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a class="active" href="connectwithus.html">Connect With Us</a></li>
+		</ul>
+	</nav>
+
+	<article>
+
+	<div class="regform"><h1>Register & Subscribe for Newsletter</h1></div>
+	<div class="main">
+		<form action="thankyou.html">
+			  <div id ="name">
+				<h2 class="name">Name</h2>
+				<input class="firstname" type="text" name="first_name" required><br>
+				<label class="firstlabel">First Name</label>
+				<input class="lastname" type="text" name="last_name" required>
+				<label class="lastlabel">Last Name</label>
+			   </div>
+				<h2 class="name">Country</h2>
+				<input class="country" type="text" name="country" required>
+				
+				<h2 class="name">Region</h2>
+				<input class="region" type="text" name="region" required>
+				
+
+				<h2 class="name">Email</h2>
+				<input class="email" type="text" name="email" required>
+				
+				<h2 class="name">Phone</h2>
+				<input class="code" type="text" name="area_code" required>
+				<label class="area-code">Area Code</label>
+				<input class="number" type="text" name="phone" required>
+				<label class="phone-number">Phone number</label>
+				
+				<h2 class="name">Newsletter Type</h2>
+				<select class="option" name="newsletter_type">
+				<option disabled="disabled" selected="selected">--Choose Option--</option>
+				<option>Transactional Newsletter</option>
+				<option>Invitation Newsletter</option>
+				<option>Commercial Newsletter</option>
+				</select>
+				
+				<h2 id="student">Get Weekly Newsletter Updates on Mobile?</h2>
+				<label class="radio">
+				<input class="radio-one" type="radio" checked="checked" required>
+				<span class="checkmark"></span>
+				Yes
+				</label>
+				<label class="radio">
+				<input class="radio-two" type="radio" required>
+				<span class="checkmark"></span>
+				No
+				</label>
+				
+				<button type="submit" href="about.html">Register</button>
+				
+			
+		
+		
+		</form>
+		
+		
+	</div>
+
+	</article>
+
+	<footer><p class="footer-text"> &copy Copyright 2021 </p> </footer>
+
+</body>
+
+</html>

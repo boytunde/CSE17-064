@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events</title>
+	<meta charset="UTF-8">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel= "stylesheet" type= "text/css" href= "mystyle.css">
+
+	<style>
+
+		article{
+			margin: 0;
+			padding: 0;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		article{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #16384c ;
+			width: 100%;
+		}
+
+		.container{
+			position: relative;
+			width: 1100px;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 30px;
+			margin-bottom: 2px;
+		}
+
+		.container .card{
+			position: relative;
+			max-width: 300px;
+			height: 215px;
+			background: #fff;
+			margin: 30px 10px;
+			padding: 20px 15px;
+			display: flex;
+			flex-direction: column;
+			box-shadow: 0 5px 20px rgb(0, 0, 0, 0.5);
+			transition: 0.3s ease-in-out; 
+		}
+
+		.container .card:hover{
+			height: 420px;
+		}
+
+		.container .card .imgbox{
+			position: relative;
+			width: 260px;
+			height: 240px;
+			top: -60px;
+			left: 1px;
+			z-index: 1;
+			box-shadow: 0 5px 20px rgb(0, 0, 0, 0.2);
+
+		}
+
+		.container .card .imgbox img{
+			max-width: 100%;
+			border-radius: 4px;
+		}
+
+		.container .card .content{
+			position: relative;
+			margin-top: -140px;
+			padding: 10px 15px;
+			text-align: center;
+			color: #111;
+			visibility: hidden;
+			opacity: 0;
+			transition: 0.3s ease-in-out;
+		}
+
+		.container .card:hover .content{
+			visibility: visible;
+			opacity: 1;
+			margin-top: -40px;
+			transition-delay: 0.3s;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<label class="logo">Bankok City</label>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="lifestyle.html">Lifestyle</a></li>
+			<li><a class="active" href="events.html">Events</a></li>
+			<li><a href="connectwithus.html">Connect With Us</a></li>
+		</ul>
+	</nav>
+
+	<article>
+
+		<div class="container">
+			<div class="card">
+				<div class="imgbox">
+					<img src="images/thai_assembly.jpg" alt="Makha Bucha Day (Buddhist Holiday)">
+				</div>
+				<div class="content">
+					<h2>Makha Bucha Day</h2>
+					<p>Varies every year – 26th February. Makha Bucha Day is a Thai public holiday, and honours the Buddha and the teachings he gave on this day. The Buddha gave the teaching to 1,250 Sangha followers, all ordained by the Buddha himself</p>
+				</div>																																	
+			</div>
+			<div class="card">
+				<div class="imgbox">
+					<img src="images/carnival1.jpg" alt="Songkran (Thai New Year)">
+				</div>
+				<div class="content">
+					<h2>Constitution Day</h2>
+					<p> 10th December every year. To remember, the 10th December every year has been declared as Constitution Day and is also a public holiday</p>
+				</div>																																	
+			</div>
+			<div class="card">
+				<div class="imgbox">
+					<img src="images/thai_dad_daughter_smiles.jpg" alt="Coronation Day">
+				</div>
+				<div class="content">
+					<h2>Coronation Day</h2>
+					<p>Celebrated on May 4, Coronation Day marks the day of the current Thai king’s formal coronation ceremony in 2019. </p>
+				</div>																																	
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="card">
+				<div class="imgbox">
+					<img src="images/carnival4.jpg" alt="Makha Bucha Day (Buddhist Holiday)">
+				</div>
+				<div class="content">
+					<h2>Songkran (Thai New Year)</h2>
+					<p> 13 – 15th April every year. Possibly the most well known Thai festivals. This is the Thai new year according to the lunar calendar.</p>
+				</div>																																	
+			</div>
+			<div class="card">
+				<div class="imgbox">
+					<img src="images/carnival5.jpg" alt="Songkran (Thai New Year)">
+				</div>
+				<div class="content">
+					<h2>Songkran (Thai New Year)</h2>
+					<p> 13 – 15th April every year. Possibly the most well known Thai festivals. This is the Thai new year according to the lunar calendar.</p>
+				</div>																																	
+			</div>
+			<div class="card">
+				<div class="imgbox">
+					<img src="images/carnival6.jpg" alt="Coronation Day">
+				</div>
+				<div class="content">
+					<h2>Coronation Day</h2>
+					<p>Celebrated on May 4, Coronation Day marks the day of the current Thai king’s formal coronation ceremony in 2019. </p>
+				</div>																																	
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="card">
+				<div class="imgbox">
+					<img src="images/carnival7.jpg" alt="Makha Bucha Day (Buddhist Holiday)">
+				</div>
+				<div class="content">
+					<h2>Visakha Bucha Day (Buddhist Holiday)</h2>
+					<p>Varies every year – 26th May.Thai calendar. Visakha Bucha marks the full moon day in the sixth lunar month. This is the day when the Buddha, over the span of 70 years, was born, reached enlightenment, and entered nirvana. </p>
+				</div>																																	
+			</div>
+			<div class="card">
+				<div class="imgbox">
+					<img src="images/carnival8.jpg" alt="Songkran (Thai New Year)">
+				</div>
+				<div class="content">
+					<h2>Vegetarian Festival</h2>
+					<p> Varies every year – from 4th to 13th October.Phuket is the heart of the festival and people participate with dramatic acts of self-mutilation that vary from walking across hot coals to piercing the cheeks with long knives.</p>
+				</div>																																	
+			</div>
+			<div class="card">
+				<div class="imgbox">
+					<img src="images/carnival10.jpg" alt="Coronation Day">
+				</div>
+				<div class="content">
+					<h2>Chulalongkorn Day</h2>
+					<p>23rd October every year. The public holiday of Chulalongkorn Day celebrates the life and work of King Chulalongkorn. Known as Rama V, he ruled Thailand for 42 years. </p>
+				</div>																																	
+			</div>
+		</div>
+
+	</article>
+
+	<footer><p class="footer-text"> &copy Copyright 2021 </p> </footer>
+
+</body>
+
+</html>

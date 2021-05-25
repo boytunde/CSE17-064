@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel= "stylesheet" type= "text/css" href= "mystyle.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+
+	<style>
+		
+		*{
+			padding: 0px;
+			margin: 0px;
+			box-sizing: border-box;
+		}
+
+		.header-container{
+			background-image: url(images/Thai_flag.jpg);
+			background-size: cover;
+			height: 100vh;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.title h1{
+			font-size: 50px;
+			color: black;
+			text-shadow: 2px 2px 10px #000;
+
+		}
+		.title, .text{
+			padding: 30px;
+			color: rgb(0, 0, 0);
+			font-weight: 600;
+			text-align: center;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<label class="logo">Bankok City</label>
+		<ul>
+			<li><a class="active" href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="lifestyle.html">Lifestyle</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="connectwithus.html">Connect With Us</a></li>
+		</ul>
+	</nav>
+
+	<article>
+
+		<div class="header-container">
+			<div class="title">
+				<h1>Welcome to Bankok, Thailand</h1>
+			</div>
+			<div class="text">
+				<p>
+					Welcome to Bankok, the city where beauty, culture and diversity come to life. Get
+					introduced to a world of Asian persuasion, of memorable landscapes & exquisite tourist destinations.
+				</p>
+			</div>
+			<form class="explore" action="about.html">
+				<button class="btn" >Explore</button>
+			</form>
+			</div>
+
+	</article>
+
+	<footer><p class="footer-text"> &copy Copyright 2021 </p> </footer>
+
+
+</body>
+
+</html>

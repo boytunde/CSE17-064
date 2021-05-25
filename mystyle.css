@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+nav{
+    background:burlywood;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color:white;
+    font-size: 35px;
+    line-height:80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover{
+    background: tomato;
+    transition: 0.5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#bd7328 ;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    a.active, a:hover{
+        background: none;
+        color: #990000;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+.section1{
+    height: 300px;
+    width: 100%;
+    background-color: thistle;
+    margin-bottom: 10px;
+}
+
+.Thai_flag{
+    width: 100%;
+   
+}
+
+footer{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.footer-text{
+    text-align: center;
+
+}
+
+/*  Form */
+
+.regform{
+    width:800px;
+    background-color:#ff8080;
+    margin: auto;
+    color: #FFFFFF;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.main{
+    background-color: rgb(0,0,0,0.5);
+    width:800px;
+    margin:auto;
+}
+
+form{
+    padding: 10px;
+}
+
+
+
+
+#name{overflow: hidden;
+    
+    width: 100%;
+    height: 100px;
+}
+
+.name{
+    margin-left:25px;
+    margin-top: 30px;
+    width: 125px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.firstname{
+    position:relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+.lastname{
+    position:relative;
+    left: 417px;
+    top: -80px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.firstlabel{
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 203px;
+    top:-45px;
+}
+
+.lastlabel{
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 192px;
+    top:-45px;
+}
+
+.country{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 518px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.region{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 518px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.email{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 518px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.code{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 95px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.number{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 338px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.area-code{
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 16px;
+    left: 100px;
+    top: -4px;			
+}
+
+.phone-number{
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 16px;
+    left: -138px;
+    top: -4px;
+}
+
+.option{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    height: 40px;
+    width: 518px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    overflow: hidden;
+
+}
+
+.option option{
+    font-size: 20px;
+}
+
+#student{
+    margin-left: 25px;
+    color: white;
+    font-size: 18px;
+}
+
+.radio{
+    display: inline;
+    padding-right: 70px;
+    font-size: 22px;
+    margin-left: 23px;
+    margin-top: 15px;
+    color: white;
+}
+
+
+.radio input{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+button{
+    background-color: #ff8080;
+    display: block;
+    margin: 20px 0 0 20px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 14px 110px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.25px;
+}
+
+button:hover{
+    background-color: tomato;
+}
+
+/* End of Form */
+
+
+/* lifestyle */
+
+.lifestyle-gallery, .lifestyle-gallery:before, .lifestyle-gallery:after{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway';
+}
+
+.lifestyle-gallery ul {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    list-style: none;
+    width: 955px;
+    height: 450px;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px 1px;
+}
+
+.lifestyle-gallery ul li{
+    position: relative;
+    width: 190px;
+    float: left;
+    border-left: 1px solid white;
+    transition: all 0.7s;
+    box-shadow: -2px 0 10px 2px;
+}
+
+.lifestyle-gallery ul li:first-child{
+    border: none;
+}
+
+.lifestyle-gallery ul:hover li{
+    width: 50px;
+}
+
+.lifestyle-gallery ul li:hover{
+    width: 750px;
+}
+
+/* End of lifestyle page */
